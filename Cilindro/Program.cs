@@ -17,7 +17,8 @@ namespace Cilindro
             float volume = MathF.PI * MathF.Pow(radius, 2) * height;
             Console.WriteLine($"Volume = {volume}");
 
-            
+            float supArea = 2 * MathF.PI * radius * (radius + height);
+            Console.WriteLine($"Superficial Area = {supArea}");
         }
     }
 }
