@@ -78,6 +78,11 @@ namespace ValoresEspeciais
             uint over2 = num10 - 1;
 
             Console.WriteLine($"Both overflows: {over1}, {over2}");
+
+            float over3 = 2 * float.MaxValue;
+            float over4 = float.MaxValue + 1;
+
+            Console.WriteLine($"Both floats overflow: {over3}, {over4}");
         }
 
     }
