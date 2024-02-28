@@ -36,6 +36,16 @@ namespace ValoresEspeciais
             double num19 = double.MaxValue;
             double num20 = double.MinValue;
 
+            double posiDou = double.PositiveInfinity;
+            double negaDou = double.NegativeInfinity;
+
+            float posiFlo = float.PositiveInfinity;
+            float negaFlo = float.NegativeInfinity;
+
+            double nanDou = double.NaN;
+            float nanFlo = float.NaN;
+
+
             Console.WriteLine($"Max values:");
             Console.WriteLine($"sbyte:{num1}");
             Console.WriteLine($"byte:{num3}");
@@ -60,6 +70,9 @@ namespace ValoresEspeciais
             Console.WriteLine($"float:{num18}");
             Console.WriteLine($"sbyte:{num20}");
 
+            Console.WriteLine($"Positive Infinity: {posiDou}, {posiFlo}");
+            Console.WriteLine($"Negative Infinity: {negaDou}, {negaFlo}");
+            Console.WriteLine($"Nan: {nanDou} {nanFlo}");
         }
     }
 }
