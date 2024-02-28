@@ -14,6 +14,9 @@ namespace Cilindro
             string strR = Console.ReadLine();
             float radius = float.Parse(strR);
 
+            float volume = MathF.PI * MathF.Pow(radius, 2) * height;
+            Console.WriteLine($"Volume = {volume}");
+
             
         }
     }
