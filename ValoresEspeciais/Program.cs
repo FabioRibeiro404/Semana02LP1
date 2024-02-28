@@ -83,6 +83,10 @@ namespace ValoresEspeciais
             float over4 = float.MaxValue + 1;
 
             Console.WriteLine($"Both floats overflow: {over3}, {over4}");
+
+            float under1, under2;
+            under1 = under2 = 10000.0f;
+            Console.WriteLine(under1 == under2 + 0.0001f);
         }
 
     }
