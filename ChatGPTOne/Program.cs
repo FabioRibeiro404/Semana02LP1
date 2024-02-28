@@ -39,7 +39,8 @@ namespace ChatGPTOne
                 }
 
                 Console.WriteLine(response);
-                
+                Console.Write("Place your question? ");
+                question = Console.ReadLine();
             }
         }
     }
