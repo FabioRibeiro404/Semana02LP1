@@ -20,6 +20,8 @@ namespace SmoothOperator
             Console.WriteLine(bit);
             int xor = n ^ 5;
             Console.WriteLine(xor);
+            bool highNum = n > 10;
+            Console.WriteLine(highNum);
         }
     }
 }
