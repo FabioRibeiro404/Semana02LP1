@@ -73,6 +73,10 @@ namespace ValoresEspeciais
             Console.WriteLine($"Positive Infinity: {posiDou}, {posiFlo}");
             Console.WriteLine($"Negative Infinity: {negaDou}, {negaFlo}");
             Console.WriteLine($"Nan: {nanDou} {nanFlo}");
+
+            uint over1 = num9 + 1;
+            uint over2 = num10 - 1;
         }
+
     }
 }
