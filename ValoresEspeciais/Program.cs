@@ -76,6 +76,8 @@ namespace ValoresEspeciais
 
             uint over1 = num9 + 1;
             uint over2 = num10 - 1;
+
+            Console.WriteLine($"Both overflows: {over1}, {over2}");
         }
 
     }
