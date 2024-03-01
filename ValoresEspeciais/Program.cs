@@ -36,6 +36,9 @@ namespace ValoresEspeciais
             double num19 = double.MaxValue;
             double num20 = double.MinValue;
 
+            char num21 = char.MaxValue;
+            char num22 = char.MinValue;
+
             double posiDou = double.PositiveInfinity;
             double negaDou = double.NegativeInfinity;
 
@@ -56,7 +59,8 @@ namespace ValoresEspeciais
             Console.WriteLine($"ulong:{num13}");
             Console.WriteLine($"long:{num15}");
             Console.WriteLine($"float:{num17}");
-            Console.WriteLine($"sbyte:{num19}\n");
+            Console.WriteLine($"sbyte:{num19}");
+            Console.WriteLine($"char:{num21}");
 
             Console.WriteLine("Min values:");
             Console.WriteLine($"sbyte:{num2}");

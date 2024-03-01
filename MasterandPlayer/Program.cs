@@ -25,30 +25,23 @@ namespace MasterandPlayer
 
                 while (numPlayer != numMaster)
                 {
+
                     //Invalid number
-                    if (numPlayer < 0 && numPlayer > 100)
+                    if (numPlayer <= 0 || numPlayer >= 100)
                     {
                         Console.WriteLine("Invalid number! Try again!");
                     }
 
                     //Number lower than Master
-                    else if (numPlayer < numMaster 
-                        && (numPlayer > 0 && numPlayer < 100))
+                    else if (numPlayer < numMaster)
                     {
                         Console.WriteLine($"The correct number is higher than {numPlayer}");
-
                     }
 
                     //Number higher than Master
-                    else if (numPlayer > numMaster 
-                        && (numPlayer > 0 && numPlayer < 100))
+                    else if (numPlayer > numMaster)
                     {
                         Console.WriteLine($"The correct number is lower than {numPlayer}");
-                    }
-
-                    else
-                    {
-                        continue;
                     }
                     
                     Console.Write("Player insert number: ");
