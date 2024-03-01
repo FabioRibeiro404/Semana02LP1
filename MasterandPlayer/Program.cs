@@ -6,6 +6,7 @@ namespace MasterandPlayer
     {
         static void Main(string[] args)
         {
+            //User 1 or Master
             Console.Write("Number Master insert number: ");
             string str = Console.ReadLine();
             int numMaster = int.Parse(str);
@@ -16,7 +17,49 @@ namespace MasterandPlayer
                 {
                     Console.WriteLine("");
                 }
-                
+
+                //User 2 or Player
+                Console.Write("Player insert number: ");
+                string str2 = Console.ReadLine();
+                int numPlayer = int.Parse(str2);
+
+                while (numPlayer != numMaster)
+                {
+                    //Invalid number
+                    if (numPlayer < 0 && numPlayer > 100)
+                    {
+                        Console.WriteLine("Invalid number! Try again!");
+                    }
+
+                    //Number lower than Master
+                    else if (numPlayer < numMaster 
+                        && (numPlayer > 0 && numPlayer < 100))
+                    {
+                        Console.WriteLine($"The correct number is higher than {numPlayer}");
+
+                    }
+
+                    //Number higher than Master
+                    else if (numPlayer > numMaster 
+                        && (numPlayer > 0 && numPlayer < 100))
+                    {
+                        Console.WriteLine($"The correct number is lower than {numPlayer}");
+                    }
+
+                    else
+                    {
+                        continue;
+                    }
+                    
+                    Console.Write("Player insert number: ");
+                    str2 = Console.ReadLine();
+                    numPlayer = int.Parse(str2);
+
+                    if (numPlayer == numMaster)
+                    {
+                        Console.WriteLine("Player wins!");
+                    }
+                }
             }
             else
             {
