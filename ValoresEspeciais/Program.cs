@@ -60,7 +60,7 @@ namespace ValoresEspeciais
             Console.WriteLine($"long:{num15}");
             Console.WriteLine($"float:{num17}");
             Console.WriteLine($"sbyte:{num19}");
-            Console.WriteLine($"char:{num21}");
+            Console.WriteLine($"char:{num21}\n");
 
             Console.WriteLine("Min values:");
             Console.WriteLine($"sbyte:{num2}");
@@ -73,6 +73,7 @@ namespace ValoresEspeciais
             Console.WriteLine($"long:{num16}");
             Console.WriteLine($"float:{num18}");
             Console.WriteLine($"sbyte:{num20}");
+            Console.WriteLine($"char:{num22}");
 
             Console.WriteLine($"Positive Infinity: {posiDou}, {posiFlo}");
             Console.WriteLine($"Negative Infinity: {negaDou}, {negaFlo}");
